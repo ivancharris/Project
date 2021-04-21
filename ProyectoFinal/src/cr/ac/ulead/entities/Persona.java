@@ -2,7 +2,7 @@ package cr.ac.ulead.entities;
 
 import java.time.LocalDate;
 
-public class Persona {
+public class Persona implements Comparable<Persona> {
 
  
 	private String nombre;
@@ -92,6 +92,11 @@ public class Persona {
 			this.canton = canton;
 			this.distrito = distrito;
 		}
+	@Override
+	public int compareTo(Persona t) {
+		// TODO Auto-generated method stub
+		return nacimiento.compareTo(t.getNacimiento());
+	}
 	
     
 }
