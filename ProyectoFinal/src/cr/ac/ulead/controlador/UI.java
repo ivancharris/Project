@@ -13,8 +13,16 @@ public class UI {
 		output.println("1. Meter Persona a la Lista");
 		output.println("2. Sacar Persona de la Lista");
 		output.println("3. Consultar lista");
-		output.println("4. Ordenar por edad (Cola de Prioridad)");
-		output.println("5. Salir");
+		output.println("4. Atender por edad (Cola de Prioridad)");
+		output.println("5. Ordenar por TreeAVL");
+		output.println("6. Salir");
+		output.println("Digite su opcion");
+	}
+	public static void mostrarArbol() {
+		output.println("1. Arbol en PreOrder");
+		output.println("2. Arbol en InOrder");
+		output.println("3. Arbol en PosOrder");
+		output.println("4. Salir");
 		output.println("Digite su opcion");
 	}
 

@@ -9,11 +9,12 @@ public class Persona implements Comparable<Persona> {
     private String primerApellido;
     private String segundoApellido;
     private String cedula;
-    private LocalDate nacimiento;
+    private Integer nacimiento;
     private String direccion;
     private String provincia;
     private String canton;
     private String distrito;
+	public int value;
     
 
    
@@ -42,10 +43,10 @@ public class Persona implements Comparable<Persona> {
 	public void setCedula(String cedula) {
 		this.cedula = cedula;
 	}
-	public LocalDate getNacimiento() {
+	public Integer getNacimiento() {
 		return nacimiento;
 	}
-	public void setNacimiento(LocalDate nacimiento) {
+	public void setNacimiento(Integer nacimiento) {
 		this.nacimiento = nacimiento;
 	}
 	public String getDireccion() {
@@ -79,14 +80,14 @@ public class Persona implements Comparable<Persona> {
 				+ ", provincia=" + provincia + ", canton=" + canton + ", distrito=" + distrito + "]";
 	}
 
-	   public Persona(String nombre, String primerApellido, String segundoApellido, String cedula, LocalDate nacimiento,
+	   public Persona(String nombre, String primerApellido, String segundoApellido, String cedula, Integer nacimiento2,
 				String direccion, String provincia, String canton, String distrito) {
 			super();
 			this.nombre = nombre;
 			this.primerApellido = primerApellido;
 			this.segundoApellido = segundoApellido;
 			this.cedula = cedula;
-			this.nacimiento = nacimiento;
+			this.nacimiento = nacimiento2;
 			this.direccion = direccion;
 			this.provincia = provincia;
 			this.canton = canton;
